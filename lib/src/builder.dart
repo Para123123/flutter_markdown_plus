@@ -991,11 +991,13 @@ class MarkdownBuilder implements md.NodeVisitor {
         key: k,
       );
     } else {
-      return Text.rich(
-        text,
-        textScaler: styleSheet.textScaler,
-        textAlign: textAlign ?? TextAlign.start,
-        key: k,
+      return SizedBox(
+        child: Text.rich(
+          text,
+          textScaler: styleSheet.textScaler,
+          textAlign: textAlign ?? TextAlign.start,
+          key: k,
+        ),
       );
     }
   }
