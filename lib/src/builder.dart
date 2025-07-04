@@ -991,7 +991,7 @@ class MarkdownBuilder implements md.NodeVisitor {
         key: k,
       );
     } else {
-      return SizedBox(
+      return Container(
         child: Text.rich(
           text,
           textScaler: styleSheet.textScaler,
