@@ -524,7 +524,7 @@ class MarkdownBuilder implements md.NodeVisitor {
           ),
         ));
       } else if (tag == 'br') {
-        current.children.add(_buildRichText(const TextSpan(text: '\n')));
+        // current.children.add(_buildRichText(const TextSpan(text: '\n')));
       } else if (tag == 'th' || tag == 'td') {
         TextAlign? align;
         final String? alignAttribute = element.attributes['align'];
